@@ -3,9 +3,8 @@ library(readxl)
 library(data.table)
 source("server.R")
 source("ui.R")
-# Run the application 
-options(shiny.host = "192.168.43.163")
-shinyApp(ui = ui, server = server)
+# Run the application
+shinyApp(ui = ui, server = server, port = 3000)
 
 # deplov the app to shinyapp.io
 # library(rsconnect)
